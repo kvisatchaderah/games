@@ -20,7 +20,7 @@ export default defineComponent({
 
   data() {
     return {
-      index: 'data index 2',
+      index: 'data index 112',
       list: [] as list_item[],
     }
   },
