@@ -1,0 +1,55 @@
+.fifteen
+	margin-top: 50px
+	margin-bottom: 50px
+	margin-left: auto
+	margin-right: auto
+	max-width: 480px
+
+	display: flex
+	flex-direction: column
+	align-content: center
+	justify-content: flex-start
+
+.game_control
+	display: flex
+
+.game_zone
+	position: relative
+
+	margin-top: 50px
+	margin-bottom: 50px
+	width: 100%
+	&.win
+		.cube
+			color: #ffffff
+			font-weight: bold
+
+$cube_outline_padding: 6px
+.cube
+	position: absolute
+	left: 0
+	top: 0
+
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+
+	font-size: 2.5rem
+	transition: all ease-in 200ms
+	&.note_event
+		pointer-event: none
+		opacity: 0
+	&.error::before
+		border-color: red
+	&::before
+		position: absolute
+		content: ''
+
+		top: $cube_outline_padding
+		left: $cube_outline_padding
+		right: $cube_outline_padding
+		bottom: $cube_outline_padding
+
+		border: 2px solid #5c365e
+		border-radius: $cube_outline_padding

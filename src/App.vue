@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">index</router-link> |
-    <router-link to="/index2">index2</router-link>
-  </nav>
-  <router-view />
+  <Asside />
+
+  <RouterView />
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import Asside from '@/views/asside/asside.vue'
+
+export default defineComponent({
+  components: { Asside },
+})
+</script>
 
 <style lang="scss">
 #app {
@@ -22,7 +29,7 @@ nav {
     font-weight: bold;
     color: #2c3e50;
 
-    &.router-link-exact-active {
+    &.--active {
       color: #42b983;
     }
   }

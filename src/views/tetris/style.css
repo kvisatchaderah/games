@@ -1,0 +1,32 @@
+/* remplate */
+body {
+	background-color: #171722;
+	color: #fff;
+	margin: 0;
+}
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+.root {
+	text-align: center;
+}
+.root canvas {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* root-heading */
+.root-heading span:nth-child(1) {color: red;}
+.root-heading span:nth-child(2) {color: orange;}
+.root-heading span:nth-child(3) {color: yellow;}
+.root-heading span:nth-child(4) {color: green;}
+.root-heading span:nth-child(5) {color: purple;}
+.root-heading span:nth-child(6) {color: cyan;}
+
+
+/* gameField */
+.gameField {
+	margin: 0 auto;
+	max-width: 120px;
+}

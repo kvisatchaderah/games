@@ -1,0 +1,34 @@
+body {
+  background-color: #302e2e;
+  color: #ccc;
+}
+
+#field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 640px;
+  height: 640px;
+  margin: 50px auto;
+  border: 2px solid #302e2e;
+}
+#field.alert {
+  border: 2px solid red;
+}
+span {
+  width: 78px;
+  height: 78px;
+  margin: 1px;
+  background-color: #ccc;
+}
+
+.mouse {
+  background-color: #33333360;
+}
+.snakeBody {
+  background-color: tomato;
+}
+.snakeHead {
+  background-color: red;
+}

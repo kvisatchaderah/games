@@ -1,22 +1,11 @@
-import {
-  createRouter,
-  createWebHistory,
-  RouteRecordRaw,
-} from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import use_component_routes from './component_routes/use_component_routes'
 
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    component: () => import('../views/index/index.vue'),
-  },
-  {
-    path: '/index2',
-    component: () => import('../views/index2/index.vue'),
-  },
-]
+const routes: RouteRecordRaw[] = [...use_component_routes()]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  linkExactActiveClass: '--active',
   routes,
 })
 

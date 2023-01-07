@@ -1,7 +1,5 @@
 <template>
-  <div class="index">
-    {{ index }}
-  </div>
+  <div class="index">index</div>
 </template>
 
 <style scoped lang="sass">
